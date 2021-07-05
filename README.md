@@ -6,4 +6,4 @@ CodeBook.md:    1) Background information of the data
 
 run_analysis.R - Commented script that performs the cleaning tasks
 
-tidy_samsung_data.txt - Text file of clean data table
+tidy_samsung_data.txt - Text file of clean data table 
