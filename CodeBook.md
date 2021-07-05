@@ -11,10 +11,25 @@ from the README file provided by the authors of the study, Anguita, et al., 2013
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 
-To process the data, I took a subset of the variables that contained the words 'std' or 'mean'
-which reduced the the number from 561 to 88.
+To process the data:
 
-For a full accounting I include the full list of variables followed by a list of those
+1) Merged the test and trial datasets
+2) Added a column to the front of the dataframe for each: subject ID and activity ID.
+3) Substituted the activity ID for actual descriptive names:
+   1 - Walking
+   2 - Walking Upstairs
+   3 - Walking Downstairs
+   4 - Sitting
+   5 - Standing
+   6 - Laying
+4) Added column titles that were the 'features' measured.
+5) Subsetted the data to include only those variables with 'std' or 'mean' in the title
+which reduced the the number from 561 to 88.
+6) Grouped this reduced dataset by subject.
+7) Grouped those grouped datasets by activity
+8) Summarized the grouped data to obtain means for each variable for each individual for each activity.
+
+For a full accounting, please find a full list of variables followed by a list of those
 that were subset for this assignment:
 
 ### Full list:
